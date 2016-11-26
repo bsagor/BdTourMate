@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sample"
+        android:icon="@drawable/logout"
+        android:title="Logout"
+        android:onClick="logOut"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/location"
+        android:icon="@drawable/locationmap"
+        android:title="Location Update"
+        android:onClick="locationUpdate"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_travel_master"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".activity.TravelMaster">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Travel Event Entry"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorBlack"
+
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textColor="@color/colorWhite"
+        android:id="@+id/traveleventET"
+        android:textColorHint="@color/white"
+        android:hint="Travel destination"
+
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="20"
+        android:drawableLeft="@drawable/description"
+        android:drawableRight="@drawable/edit"
+        android:background="@drawable/shape2"/>
+    <EditText
+        android:textColor="@color/colorWhite"
+        android:id="@+id/estimatedbudgetET"
+        android:textColorHint="@color/white"
+        android:hint="Estimated budget"
+        android:layout_marginTop="15dp"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:drawableLeft="@drawable/budget"
+        android:drawableRight="@drawable/edit"
+        android:background="@drawable/shape2"/>
+
+    <EditText
+        android:textColor="@color/colorWhite"
+        android:id="@+id/fromdateET"
+        android:textColorHint="@color/white"
+        android:hint="From date"
+        android:layout_marginTop="15dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:drawableLeft="@drawable/calendar"
+        android:drawableRight="@drawable/edit"
+        android:background="@drawable/shape2"/>
+
+    <EditText
+        android:textColor="@color/colorWhite"
+        android:id="@+id/todateET"
+        android:hint="To date"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/calendar"
+        android:drawableRight="@drawable/edit"
+        android:background="@drawable/shape2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:onClick="signAddTravelinfo"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/buttonshape"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:onClick="deleteevent"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/buttonshape"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:id="@+id/btnview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View List"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:onClick="viewTravellist"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/buttonshape"/>
+    </LinearLayout>
+</LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

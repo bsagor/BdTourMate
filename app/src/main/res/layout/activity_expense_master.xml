@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_expense_master"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".activity.ExpenseMaster">
+    <TextView
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Travel Expense Entry"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorBlack"
+
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textColor="@color/colorWhite"
+        android:id="@+id/expenseparticularsET"
+
+        android:hint="Expense particulars"
+        android:textColorHint="@color/white"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="20"
+        android:drawableStart="@drawable/description"
+        android:drawableEnd="@drawable/edit"
+        android:background="@drawable/shape2"
+        android:drawableLeft="@drawable/description"
+        android:drawableRight="@drawable/edit" />
+
+    <EditText
+        android:textColor="@color/colorWhite"
+        android:id="@+id/expenseET"
+        android:layout_marginTop="20dp"
+        android:hint="Expense"
+        android:textColorHint="@color/white"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:drawableStart="@drawable/budget"
+        android:drawableEnd="@drawable/edit"
+        android:background="@drawable/shape2"
+        android:drawableLeft="@drawable/budget"
+        android:drawableRight="@drawable/edit" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:id="@+id/btnSave"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:onClick="signAddExpenseinfo"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/buttonshape"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:id="@+id/btnDelete"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:onClick="deleteExpense"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/buttonshape"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:id="@+id/btnview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View List"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:onClick="viewExpenselist"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/buttonshape"/>
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ListView
+        android:id="@+id/expenseLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</LinearLayout>
+</LinearLayout>

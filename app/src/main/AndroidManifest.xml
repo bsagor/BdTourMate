@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.akhgupta.easylocation.demo">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".activity.MainActivity2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.SignUpvisitor">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.akhgupta.easylocation.demo.activity.MainActivity2" />
+        </activity>
+        <activity android:name=".activity.Home" />
+        <activity android:name=".activity.WeatherMaster">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.akhgupta.easylocation.demo.activity.Home" />
+        </activity>
+        <activity android:name=".activity.TravelMaster">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.akhgupta.easylocation.demo.activity.NearbyPlaceMaster" />
+        </activity>
+        <activity android:name=".activity.TravelList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.akhgupta.easylocation.demo.activity.TravelMaster" />
+        </activity>
+        <activity android:name=".activity.ExpenseMaster">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.akhgupta.easylocation.demo.activity.TravelList" />
+        </activity>
+        <activity android:name=".activity.ExpenseList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.akhgupta.easylocation.demo.activity.TravelList" />
+        </activity>
+        <activity android:name=".gallery.GalleryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.akhgupta.easylocation.demo.activity.Home" />
+        </activity>
+        <activity android:name=".activity.RetrivePassword">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.akhgupta.easylocation.demo.activity.MainActivity2" />
+        </activity>
+        <activity android:name=".activity.NearbyPlaceMaster">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.akhgupta.easylocation.demo.activity.Home" />
+        </activity>
+        <activity android:name=".activity.PlacesViewMaster" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".activity.TravelMomentActivity"></activity>
+    </application>
+
+</manifest>

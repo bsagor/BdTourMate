@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:textSize="20sp"
+        android:id="@+id/btnSaveplace"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Place"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/shape1"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tourID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/fromdateTV"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From Date"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/todateTV"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To Date"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <ImageView
+            android:id="@+id/editTour"
+            android:src="@drawable/edit"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+
+            android:id="@+id/btnEstimatedbudget"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="B:"
+            android:textSize="10sp"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/taka"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/shape2"/>
+        <Button
+            android:textSize="10sp"
+            android:id="@+id/btnbudgetExpended"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="E:"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/taka"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/shape2"/>
+        <Button
+            android:textSize="10sp"
+            android:id="@+id/btnbudgetRemain"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="R:"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/taka"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/shape2"/>
+        <Button
+        android:layout_weight="1.4"
+            android:textSize="10sp"
+        android:id="@+id/btnExpense"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="+Ex"
+        android:textAllCaps="false"
+
+        android:textStyle="bold"
+
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/shape2"/>
+        <Button
+            android:layout_weight="1.4"
+            android:textSize="10sp"
+            android:id="@+id/btnviewExpense"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="V"
+            android:textAllCaps="false"
+
+            android:textStyle="bold"
+
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/shape2"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:background="@drawable/line"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BD Tour Mate</string>
+    <string name="request_single_location_fix">Request Current Location</string>
+    <string name="request_continuous_location_updates">Request Continuous Location updates</string>
+    <string name="location_permission_dialog_title">Location permission needed</string>
+    <string name="location_permission_dialog_message">Enable Location permission now?</string>
+    <string name="location_services_off">Location services OFF</string>
+    <string name="open_location_settings">Enable location services now?</string>
+
+    <string name="place_api_key">AIzaSyDr4uWbNwcZHYI4RWZ4Tw6YuXl15JJv3rY</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

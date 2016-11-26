@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context="com.akhgupta.easylocation.demo.MainActivity">
+    <TextView
+        android:id="@+id/txtlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/requestSingleLocationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonshape"
+        android:text="@string/request_single_location_fix" />
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/requestLocationUpdatesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonshape"
+        android:text="Clear Current Location" />
+</LinearLayout>
